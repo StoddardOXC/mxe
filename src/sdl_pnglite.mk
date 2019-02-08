@@ -4,7 +4,7 @@ PKG             := sdl_pnglite
 $(PKG)_WEBSITE  := lxnt.wtf
 $(PKG)_DESCR    := SDL_pnglite
 $(PKG)_IGNORE   :=
-$(PKG)_VERSION  := 0.23
+$(PKG)_VERSION  := 0.24
 $(PKG)_CHECKSUM := b83aeeb7217927a64c004e5394fca3c1ae799cb8d9027870347b491208e0c3ef
 $(PKG)_SUBDIR   := .
 $(PKG)_FILE     := SDL_pnglite.tar.gz
@@ -38,7 +38,7 @@ define $(PKG)_BUILD
      echo 'Version: $($(PKG)_VERSION)'; \
      echo 'Description: $($(PKG)_DESCR)'; \
      echo 'Requires: sdl2'; \
-     echo 'Libs: -lsdl_pnglite'; \
+     echo 'Libs: -lSDL_pnglite'; \
      echo 'Cflags.private:';) \
      > '$(PREFIX)/$(TARGET)/lib/pkgconfig/sdl_pnglite.pc'
 
